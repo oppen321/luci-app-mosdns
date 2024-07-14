@@ -35,7 +35,7 @@
   rm -rf feeds/packages/net/v2ray-geodata
 
   git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-  git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+  git clone https://github.com/oppen321/v2ray-geodata package/v2ray-geodata
   make menuconfig # choose LUCI -> Applications -> luci-app-mosdns
   make package/mosdns/luci-app-mosdns/compile V=s
   ```
@@ -48,7 +48,7 @@
   find ./ | grep Makefile | grep mosdns | xargs rm -f
 
   git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-  git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+  git clone https://github.com/oppen321/v2ray-geodata package/v2ray-geodata
   make menuconfig # choose LUCI -> Applications -> luci-app-mosdns
   make package/mosdns/luci-app-mosdns/compile V=s
   ```
@@ -67,7 +67,7 @@
 
 - Execute install script (Multi-architecture support)
   ```shell
-  sh -c "$(curl -ksS https://raw.githubusercontent.com/sbwml/luci-app-mosdns/v5/install.sh)"
+  sh -c "$(curl -ksS https://raw.githubusercontent.com/oppen321/luci-app-mosdns/main/install.sh)"
   ```
 
 --------------
